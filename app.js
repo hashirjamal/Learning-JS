@@ -83,10 +83,14 @@ function sub(){
             }
             
         })
+        recomendations.sort((a,b)=>{
+        if (b.vote_average > a.vote_average){
+            return true;
+        }
+        })
         console.log(recomendations);
         displayMovies(recomendations);
     }
-    //     recomendations.sort((a,b)=>{
     //         let aPoints =0;
     //         let bPoints =0;
     //         if(a.genres.includes(genreValue)){
@@ -119,12 +123,13 @@ function sub(){
     //     }
     
     const btnElem = document.getElementById("btn");
-    const recElem = document.getElementById("reccomendation");
+    const recElem = document.getElementById("recommendation");
     btnElem.addEventListener("click",submit);
     
     
     
     const displayMovies = (recomendations)=>{
+        recElem.innerText="" 
         let index=0;
     recomendations.forEach(element=>{
         element.similar.forEach(data=>{

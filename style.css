@@ -3,7 +3,7 @@
     margin: 0;
 }
 #nav{
-    background-color: burlywood;
+    background-color: #7bcaae;
     width: 100%;
     border: 2px solid black;
     padding: 1.2rem;
@@ -51,10 +51,11 @@ button{
     width:98%;
     border: 1px solid black;
     border-radius: 6px;
-    background-color: rgb(114 178 202);
+    background-color: #7bcaae;
     margin-left: 0.5rem;
     margin-top: 0.5rem;
     padding: 0.3rem;
+    margin-bottom: 4px;
 }
 .head{
     display: flex;
