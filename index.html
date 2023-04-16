@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+</head>
+<body>
+    <div id="nav">
+<h2>MOVIE APP</h2>
+    </div>
+    <section class="Container">
+<section id="selection">
+    <div id="interest">
+        <label for="selInt">GENRE</label>
+
+        <select name="selInt" id="selInt" onclick="sub()">
+            <!-- <option value="entertainment" >entertainment</option>
+            <option value="horror" >horror</option>     -->
+            </select>
+    </div>
+
+    <div id="year">
+        <label for="selYear">YEAR</label>
+        <select name="selYear" id="selYear" onclick="sub()">
+            <!-- <option value="2019" >2019</option>
+            <option value="2009" >2009</option>      -->
+           </select>
+    </div>
+
+    <div id="lang">
+        <label for="selLang">LANGUAGE</label>
+        <select name="selLang" id="selLang" onclick="sub()">
+            <!-- <option value="English" >English</option>
+            <option value="French" >French</option> 
+         -->
+        </select>
+        </div>
+    </section>
+    <div id="rating">
+        <label for="ratingS">RATING</label>
+        <select name="rating" id="ratingS" onclick="sub()">
+            <option value=">1" >>1</option>
+            <option value=">2" >>2</option>
+            <option value=">3" >>3</option>
+            <option value=">4" >>4</option>
+            <option value=">5" >>5</option>
+            <option value=">6" >>6</option>
+            <option value=">7" >>7</option>
+            <option value=">8" >>8</option>
+            <option value=">9" >>9</option>
+</select>
+
+    <button id="btn">SUBMIT</button>
+        </section>
+        <section class="Container" id="recommendation">
+            <div class="head" id="title">
+                <span class="rank">RANK</span>
+                <span class="movie">MOVIE</span>
+                <span class="year">YEAR</span>
+            </div>
+        
+            <div class="head" id="detail">
+                <!-- <span class="rank">4</span>
+                <span class="movie">AVENGERS</span>
+                <span class="year">2018</span> -->
+            </div>
+        
+        </section>
+        </body>
+</html>
